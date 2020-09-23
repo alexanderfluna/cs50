@@ -1,0 +1,31 @@
+<!-- Include at the start of every html webpage -->
+<!DOCTYPE html>
+
+<!-- Says the language of the html will be in English -->
+<html lang="eng">
+
+    <!-- The <head> is for storing other data about the page
+    that the browser needs to know in order to render it -->
+    <head>
+        <title>
+            Hello!
+        </title>
+    </head>
+
+    <body>
+        <p> This is some text.</p>
+        <select>
+            <option value="large">Large Text</option>
+            <option value="initial" selected>Medium Text</option>
+            <option value="small">Small Text</option>
+        </select>
+        <script>
+            document.querySelector('select').onchange = function() {
+                document.querySelector('p').style.fontSize = this.value;
+            }
+        </script>
+    </body>
+
+</html>
+
+<!-- write http-server in the terminal to see the website -->

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    <head>
+        <title>Geolocation</title>
+    </head>
+    <body>
+        <script>
+            navigator.geolocation.getCurrentPosition(function(position) {
+                document.write(position.coords.latitude + ', ' + position.coords.longitude);
+            });
+        </script>
+    </body>
+
+</html>
+
+<!-- write http-server in the terminal to see the website -->

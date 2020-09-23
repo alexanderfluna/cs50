@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+    <head>
+        <title>
+            Form
+        </title>
+
+        <style>
+            form{
+                /* Gives 10px around each form */
+                padding: 10px;
+            }
+        </style>
+
+        <script>
+            function greet()
+            {
+                // Name = name value put into text box
+                let age = document.querySelector('#age').value;
+                if(age === '')
+                {
+                    age = 'indecisive';
+                }
+                alert('You are ' + age + '!');
+            }
+
+            function hello()
+            {
+                let name = document.querySelector('#name').value;
+                if(name === '')
+                {
+                    name = 'world';
+                }
+                // Changes the innter html to 'Hello, {name}!'
+                document.querySelector('#result').innerHTML = 'Hello, ' + name + '!';
+            }
+
+            let counter = 0;
+
+            function increment()
+            {
+                counter++;
+                document.querySelector('#in').innerHTML = counter;
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <form action="https://www.google.com/search" method="get">
+            <!-- Creates a text box -->
+            <input name="q" type="text">
+            <!-- Creates a button to submit the form -->
+            <input type="submit" value="Google Search">
+        </form>
+
+        <!-- Upon submit, do this javascript function -->
+        <form onsubmit="greet(); return false;">
+            <!-- Creates a text box -->
+            <!-- The id allows javascript to access the html elements -->
+            <input type="text" id="age">
+            <!-- Creates a button to submit the form -->
+            <input type="submit" value="Age Alert">
+        </form>
+
+        <!-- Upon submit, do this javascript function -->
+        <form onsubmit="hello(); return false;">
+            <!-- Creates a text box -->
+            <!-- The id allows javascript to access the html elements -->
+            <input type="text" id="name">
+            <!-- Creates a button to submit the form -->
+            <input type="submit" value="Hello, {name}!">
+        </form>
+
+        <!-- The id allows javascript to access the html elements -->
+        <div id="result">
+            Hello!
+        </div>
+
+        <!-- Upon submit, do this javascript function -->
+        <form onsubmit="increment(); return false;">
+            <input type="submit" value"Increment">
+        </form>
+        <div id="in">
+            0
+        </div>
+
+    </body>
+
+</html>
+

@@ -1,0 +1,34 @@
+<!-- Include at the start of every html webpage -->
+<!DOCTYPE html>
+
+<!-- Says the language of the html will be in English -->
+<html lang="eng">
+
+    <!-- The <head> is for storing other data about the page
+    that the browser needs to know in order to render it -->
+    <head>
+        <title>
+            Background
+        </title>
+    </head>
+    <body>
+        <button id="red">R</button>
+        <button id="green">G</button>
+        <button id="blue">B</button>
+        <script>
+            let body = document.querySelector('body')
+            document.querySelector('#red').onclick = function() {
+                body.style.backgroundColor = 'red';
+            }
+            document.querySelector('#green').onclick = function() {
+                body.style.backgroundColor = 'green';
+            }
+            document.querySelector('#blue').onclick = function() {
+                body.style.backgroundColor = 'blue';
+            }
+        </script>
+    </body>
+
+</html>
+
+<!-- write http-server in the terminal to see the website -->

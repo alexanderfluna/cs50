@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Tasks</h1>
+
+    <!-- <ul> element creates an unordered list -->
+    <ul>
+        <!-- Inside <ul> there is an <li> element for list item -->
+        <!-- How to use a for loop in html code -->
+        {% for todo in todos %}
+            <li>{{ todo }}</li>
+        {% endfor %}
+
+    </ul>
+
+    <a href="/add">Create a New Task</a>
+{% endblock %}

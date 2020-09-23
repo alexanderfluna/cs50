@@ -1,0 +1,44 @@
+Lines 7-10: Prompt user for height (answer)
+
+Line 12: If height is not an integer between 1 and 8, reprompt user for height (answer)
+Assume below that the answer is 8:
+
+Line 14:
+1) Start *int row* at 0
+2) Check the conditiion is 0 less than 8
+3) If 0 is less than 8, do the for loops below
+
+Lines 16-18:
+1) Start *int space* at 7 = *answer(8)* minus 1.
+2) Check the condition is 7 > *row(0)* minus 1 = -1
+2) Since 7 > -1, print 7 spaces until 0 > -1. This stops here because -1 is not > -1.
+3) Since the condition is now false, go down to the next line
+
+Lines 20-22:
+1) Start *int hashes* at 0
+2) Check the condition is 0 < *row(0)* plus 1 = 1
+3) Since 0 < 1, print 1 hash. This stops here because 1 is not > 1.
+4) Since the condition is now false, go down to the next line
+
+Line 25:
+1) Now that the other for loops are done, print out '\n'
+2) Go back to the top of the for loop because *int row* did not process 8 times yet
+
+Line 14:
+1) *int row* added 1 so it's now 1
+2) Check the condition is 1 less than 8
+3) If 1 is less than 8, do the for loops below
+
+Lines 16-18:
+1) Start *int space* at 7 = *answer(8)* minus 1
+2) Check the condition is 7 > *row(1)* minus 1 = 0
+2) Since 7 > 0, print 6 spaces until 1 > 0. This stops here because 0 is not > 0.
+3) Since the condition is now false, go down to the next line
+
+Lines 20-22:
+1) *int hashes* added 1 so it's now 1
+2) Check the condition is 1 < *row(1)* plus 1 = 2
+3) Since 1 < 2, print a hashmark because it started as 1 and another hashmark because the condition is true. This stops here because 2 is not < 2
+4) Since the condition is now false, go down to the next line
+
+...

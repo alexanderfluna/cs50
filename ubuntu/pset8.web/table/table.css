@@ -1,0 +1,19 @@
+/* Changes the design of any <table> elements */
+table{
+    /* Creates a border around table */
+    border: 1px solid black;
+    /* Removes the double border */
+    border-collapse: collapse;
+}
+
+/* Changes the design of any <td> elements */
+td{
+    /* Creates border around each cell */
+    border: 1px solid black;
+    /* 5px of space around each cell's text */
+    padding: 5px;
+}
+
+th{
+    background-color: blue;
+}

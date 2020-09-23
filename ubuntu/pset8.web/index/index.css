@@ -1,0 +1,29 @@
+/* Style brackets are used to start CSS code in html */
+
+/* Sets all text in <body> to red & background to black */
+body{
+    color: red;
+    background-color: black;
+}
+
+/* Changes ALL <h1> elements */
+h1{
+    text-align: center;
+    color: red;
+}
+
+/* Changes ALL elements with class="title" */
+.title{
+    text-align: center;
+    color: blue;
+}
+
+/* Changes ALL elements with class="font" */
+.font{
+    font-family: sans-serif;
+    font-size: large;
+}
+/* Changes ALL elements with class="green" */
+.green{
+    color: green;
+}
