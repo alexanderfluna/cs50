@@ -1,3 +1,4 @@
+// a .js function for the <body> in the .html to blink
 function blink()
 {
     let body = document.querySelector('body');
